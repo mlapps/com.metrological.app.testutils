@@ -25,6 +25,7 @@ export default class App extends Lightning.Component {
     console.log('visible:', wrapper.isVisible())
     console.log(wrapper.find('Another'))
     console.log(wrapper.findAll('Another'))
+    console.log(wrapper.findComponent('Another'))
     console.log(wrapper.text())
   }
 
