@@ -1,3 +1,3 @@
-# Lighning Test Utils
+# Lightning Test Utils
 
 ## com.metrological.app.testutils
