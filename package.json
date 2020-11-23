@@ -1,28 +1,22 @@
 {
-  "name": "com.metrological.app.testutils",
-  "description": "Test utils",
+  "name": "lightning-test-utils",
+  "module": "dist/lightning-test-utils.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c rollup.config.js"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@lightningjs/sdk": "^3.1.1"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.4.3",
-    "prettier": "^1.19.1"
+    "@lightningjs/core": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.33.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.3"
   }
 }

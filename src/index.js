@@ -1,6 +1,5 @@
-import { Launch } from '@lightningjs/sdk'
-import App from './App.js'
+import { mount } from './mount';
 
-export default function() {
-  return Launch(App, ...arguments)
-}
+export default {
+  mount,
+};
