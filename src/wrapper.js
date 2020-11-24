@@ -1,8 +1,8 @@
 import { createLightningApp } from './create-lightning-app';
 
 export default class Wrapper {
-  constructor({ component, properties }) {
-    this.testApp = createLightningApp({
+  constructor({ application, component, properties }) {
+    this.testApp = application || createLightningApp({
       stage: {
         w: 1920,
         h: 1080,
